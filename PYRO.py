@@ -21,3 +21,6 @@ async def ping_(_, message):
 
 
 
+app.run()
+xd.run()
+pepe.run()
