@@ -10,7 +10,7 @@ pepe = Client(c, api_id=a, api_hash=b)
 app = Client(d, api_id=a, api_hash=b)
 xd = Client(e, api_id=a, api_hash=b)
 @pepe.on_message(filters.command("ping") & filters.user(PRO))
-@bot.on_message(filters.command("ping") & filters.user(PRO))
+@app.on_message(filters.command("ping") & filters.user(PRO))
 @xd.on_message(filters.command("ping") & filters.user(PRO))
 async def ping_(_, message):
     start = datetime.now()
@@ -20,7 +20,7 @@ async def ping_(_, message):
     await message.reply(f"**>> Pong!**\n`⚡{resp} ms`")
 
 
-
+print("Success")
 app.run()
 xd.run()
 pepe.run()
